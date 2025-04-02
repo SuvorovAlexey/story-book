@@ -5,7 +5,7 @@
 
 ## Работа с проектом
 * UI-компоненты добавляются в `projects/suvorov-test-ui-lib/src/lib/components`
-* Компонент добавляется в `src/app/components` где для него создается файл `stories.ts`
+* Компонент имплементируется в `src/app/components` где для него создается файл `stories.ts`
 
 ## Разработка
 Развернуть Angular проект
