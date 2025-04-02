@@ -8,9 +8,13 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run story-book:storybook",
-    "build-storybook": "ng run story-book:build-storybook"
+    "build-storybook": "ng run story-book:build-storybook",
+    "build-library": "ng build suvorov-test-ui-lib",
+    "publish:patch": "npm version patch && cd dist/suvorov-test-ui-lib && npm publish",
+    "publish:minor": "npm version minor && cd dist/suvorov-test-ui-lib && npm publish",
+    "publish:major": "npm version major && cd dist/suvorov-test-ui-lib && npm publish"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
@@ -47,6 +51,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^19.2.0",
     "storybook": "^8.6.10",
     "typescript": "~5.7.2"
   }
