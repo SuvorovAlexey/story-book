@@ -3,5 +3,8 @@
   "dest": "../../dist/suvorov-test-ui-lib",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "primeng"
+  ]
 }

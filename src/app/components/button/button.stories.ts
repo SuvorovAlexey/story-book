@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
-import { SwitchComponent } from '../switch/switch.component';
 import { fn } from '@storybook/test';
 
 const meta: Meta<ButtonComponent> = {

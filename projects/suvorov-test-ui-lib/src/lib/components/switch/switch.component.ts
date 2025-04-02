@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ToggleSwitch, ToggleSwitchChangeEvent, ToggleSwitchModule } from 'primeng/toggleswitch';
+import { ToggleSwitch, ToggleSwitchChangeEvent } from 'primeng/toggleswitch';
 import { FormsModule } from '@angular/forms';
 import { Button } from 'primeng/button';
 

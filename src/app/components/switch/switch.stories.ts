@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import { SwitchComponent } from './switch.component';
 import { fn } from '@storybook/test';
+import { SwitchComponent } from '../../../../projects/suvorov-test-ui-lib/src/lib/components/switch/switch.component';
 
 const meta: Meta<SwitchComponent> = {
   component: SwitchComponent,
