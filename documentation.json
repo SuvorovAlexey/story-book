@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-2235880d7f1cc2ce7fe48450c18f98a0be435a5d06c643b641409d1629483c50621082fd6e7578d9efecfa9a89778e2e37750341e07030976093dbb238481d15",
+            "id": "component-AppComponent-c337a4d4765e921206a9a64951a9199905c7a4dbd99bc3a741fc2a602b260210262a8e8b30e3af6b0d8469730a7ed73da4da2ba901ac788fe7b4fa8022c731c6",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -36,7 +36,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 15
+                    "line": 13
                 }
             ],
             "methodsClass": [],
@@ -52,145 +52,18 @@
                 {
                     "name": "ButtonModule",
                     "type": "module"
-                },
-                {
-                    "name": "SwitchComponent",
-                    "type": "component"
-                },
-                {
-                    "name": "ButtonComponent",
-                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { ButtonModule } from 'primeng/button';\nimport { SwitchComponent } from './components/switch/switch.component';\nimport { ButtonComponent } from 'suvorov-test-ui-lib';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet, ButtonModule, SwitchComponent, ButtonComponent],\n  templateUrl: './app.component.html',\n  standalone: true,\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'story-book';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { ButtonModule } from 'primeng/button';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet, ButtonModule],\n  templateUrl: './app.component.html',\n  standalone: true,\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'story-book';\n}\n",
             "styleUrl": "./app.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"flex justify-content-center\">\n<!--  <p-button label=\"Check\" />-->\n<!--  <p-button label=\"Check 1\" />-->\n<!--  <pb-switch [disabled]=\"true\" [checked]=\"false\" />-->\n</div>\n\n<pb-button></pb-button>\n\n<router-outlet />\n"
-        },
-        {
-            "name": "ButtonComponent",
-            "id": "component-ButtonComponent-ccca3c841f02a2d165186019ca626552f093142c761127bce9e0020f936ef49c54e470acf9625b798b109c3e4660412429215ce9abfebcce969a15bde5c7a928",
-            "file": "src/app/components/button/button.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "pb-button",
-            "styleUrls": [],
-            "styles": [],
-            "templateUrl": [
-                "./button.component.html"
-            ],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [
-                {
-                    "name": "disabled",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 15,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "label",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 14,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "severity",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 16,
-                    "type": "\"success\" | \"info\" | \"warn\" | \"danger\" | \"help\" | \"primary\" | \"secondary\" | \"contrast\" | null | undefined",
-                    "decorators": []
-                },
-                {
-                    "name": "size",
-                    "defaultValue": "undefined",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 17,
-                    "type": "\"small\" | \"large\" | undefined",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onClick",
-                    "defaultValue": "new EventEmitter<any>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 18,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "click",
-                    "args": [
-                        {
-                            "name": "event",
-                            "type": "MouseEvent",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 20,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        125
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "event",
-                            "type": "MouseEvent",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [
-                {
-                    "name": "Button"
-                }
-            ],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { Button } from 'primeng/button';\n\n@Component({\n  selector: 'pb-button',\n  imports: [\n    Button\n  ],\n  standalone: true,\n  templateUrl: './button.component.html',\n  styleUrl: './button.component.scss'\n})\nexport class ButtonComponent {\n  @Input() label = '';\n  @Input() disabled = false;\n  @Input() severity: \"success\" | \"info\" | \"warn\" | \"danger\" | \"help\" | \"primary\" | \"secondary\" | \"contrast\" | null | undefined;\n  @Input() size: 'small' | 'large' | undefined = undefined;\n  @Output() onClick = new EventEmitter<any>();\n\n  public click(event: MouseEvent): void {\n    this.onClick.emit(event);\n  }\n}\n",
-            "styleUrl": "./button.component.scss",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "",
-            "extends": [],
-            "templateData": "<p-button\n  [label]=\"label\"\n  [disabled]=\"disabled\"\n  [size]=\"size\"\n  [severity]=\"severity\"\n  (onClick)=\"click($event)\"\n/>\n"
+            "templateData": "<router-outlet />\n"
         }
     ],
     "modules": [],
@@ -250,15 +123,6 @@
                 "name": "appConfig",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/7",
                 "status": "low"
             }
         ]

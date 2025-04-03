@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import { ButtonComponent } from './button.component';
 import { fn } from '@storybook/test';
+import { ButtonComponent } from '../../../../projects/suvorov-test-ui-lib/src/lib/components/button/button.component';
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
